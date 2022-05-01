@@ -1,0 +1,585 @@
+/* Font: Karla
+Farbe: #323A45 / #848484
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+
+/*
+##################################
+        GENERAL
+##################################
+*/
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+html {
+        font-size: 100%;
+}
+
+body {
+        max-width: 1440px;
+        margin: 0 auto;
+        color: #323A45;
+        font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+        width: 90%;
+        margin: 0 auto;
+}
+
+/* 
+##################################
+        HEADER / NAV
+##################################
+*/
+
+header nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-weight: 600;
+}
+
+header nav ul {
+        display: flex;
+}
+
+header nav ul li {
+        padding-right: 60px;
+        list-style: none;
+}
+
+header nav a {
+        text-decoration: none;
+        color: #323A45;
+}
+
+header nav a:hover {
+        color: rgba(0, 0, 0, 0.098);
+}
+
+/* 
+##################################
+        MAIN SECTION GENERAL
+##################################
+*/
+
+main p {
+        color: #848484;
+}
+
+ul {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        list-style: none;
+}
+
+figcaption {
+        padding-bottom: 5%;
+        color: #848484;
+}
+
+figure>img {
+        padding-top: 3%;
+}
+
+/* 
+##################################
+        GALLERY'S
+##################################
+*/
+
+main .gallery_a,
+.gallery_b,
+.gallery_c,
+.gallery_d {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: 10fr 1fr 10fr 1fr;
+        height: 150vh;
+        gap: 25px;
+}
+
+.boxhover:hover {
+        background-color: rgba(0, 0, 0, 0.098);
+        width: 100%;
+}
+
+/* 
+##################################
+        GRID BOXES & TEXT
+##################################
+*/
+
+.box1a,
+.box1b,
+.box1c,
+.box1d {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+}
+
+.text_1a,
+.text_1b,
+.text_1c,
+.text_1d,
+.text_1e {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+}
+
+.box2a,
+.box2b,
+.box2c,
+.box2d {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+}
+
+.text_2a,
+.text_2b,
+.text_2c,
+.text_2d,
+.text_2e {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+}
+
+.box3a,
+.box3b,
+.box3c,
+.box3d {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+}
+
+.text_3a,
+.text_3b,
+.text_3c,
+.text_3d,
+.text_3e {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+}
+
+.box4a,
+.box4b,
+.box4c,
+.box4d {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+}
+
+.text_4a,
+.text_4b,
+.text_4c,
+.text_4d {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+}
+
+.box5a,
+.box5b,
+.box5c,
+.box5d {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+}
+
+.text_5a,
+.text_5b,
+.text_5c,
+.text_5d {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+}
+
+.box6a,
+.box6b,
+.box6c,
+.box6d {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+}
+
+.text_6a,
+.text_6b,
+.text_6c,
+.text_6d {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+}
+
+main .gallery_e {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: 5fr 1fr;
+        height: 500px;
+        gap: 25px;
+}
+
+.box1e {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+}
+
+.box2e {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+}
+
+.box3e {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+}
+
+/* 
+##################################
+         BOX_A 
+##################################
+*/
+
+.box1a {
+        background-image: url("/assets/img/d2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box2a {
+        background-image: url("/assets/img/u6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box3a {
+        background-image: url("/assets/img/u10.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box4a {
+        background-image: url("/assets/img/u9.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box5a {
+        background-image: url("/assets/img/h17.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box6a {
+        background-image: url("/assets/img/c3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* 
+##################################
+         BOX B
+##################################
+*/
+
+.box1b {
+        background-image: url("/assets/img/c6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box2b {
+        background-image: url("/assets/img/h13.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box3b {
+        background-image: url("/assets/img/h8.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box4b {
+        background-image: url("/assets/img/h2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box5b {
+        background-image: url("/assets/img/d5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box6b {
+        background-image: url("/assets/img/c5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* 
+##################################
+         BOX C
+##################################
+*/
+
+.box1c {
+        background-image: url("/assets/img/u7.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box2c {
+        background-image: url("/assets/img/d4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box3c {
+        background-image: url("/assets/img/u11.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box4c {
+        background-image: url("/assets/img/h9.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box5c {
+        background-image: url("/assets/img/p2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box6c {
+        background-image: url("/assets/img/h4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* 
+##################################
+         BOX D
+##################################
+*/
+
+.box1d {
+        background-image: url("/assets/img/c1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box2d {
+        background-image: url("/assets/img/u12.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box3d {
+        background-image: url("/assets/img/p3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box4d {
+        background-image: url("/assets/img/life-15.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box5d {
+        background-image: url("/assets/img/life-17.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box6d {
+        background-image: url("/assets/img/life-16.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/*
+##################################
+         BOX E
+##################################
+*/
+
+.box1e {
+        background-image: url("/assets/img/home-8.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box2e {
+        background-image: url("/assets/img/home-10.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.box3e {
+        background-image: url("/assets/img/home-9.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* 
+##################################
+        FOOTER
+##################################
+*/
+
+footer>p {
+        padding-top: 5%;
+        padding-bottom: 2%;
+        font-size: 0.9rem;
+        color: #848484;
+}
+
+footer>div {
+        display: grid;
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: 1fr 1fr;
+        height: 30vh;
+        gap: 10px;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+}
+
+.design_shop_a {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding-top: 25%;
+        padding-bottom: 15%;
+}
+
+.design_shop_b {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+}
+
+.design_shop_b>p>a {
+        text-decoration: none;
+        color: #323A45;
+        font-weight: 500;
+}
+
+.contact_a {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        padding-top: 25%;
+        padding-bottom: 15%;
+        padding-left: 40%;
+}
+
+.contact_b {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        padding-left: 40%;
+}
+
+.newsletter_a {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        padding-top: 25%;
+}
+
+.newsletter_b {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+}
+
+.newsletter_b>p>a {
+        text-decoration: none;
+        color: #323A45;
+        font-weight: 700;
+}
+
+.find_us_here_a {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+        padding-top: 25%;
+        padding-bottom: 15%;
+}
+
+.find_us_here_b {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+}
+
+.find_us_here_b>a {
+        text-decoration: none;
+        color: #323A45;
+        font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+
+        header nav ul {
+                display: flex;
+                font-size: 0.7rem;
+        }
+
+        header nav ul li {
+                padding-right: 5px;
+                list-style: none;
+                font-size: 0.7rem;
+        }
+
+        footer>div {
+                display: grid;
+                grid-template-columns: repeat(2, 24%);
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                height: 30vh;
+                gap: 10px;
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+        }
+
+        footer>p {
+                padding-top: 10%;
+                padding-bottom: 5%;
+                font-size: 0.9rem;
+                color: #848484;
+        }
+
+
+}
